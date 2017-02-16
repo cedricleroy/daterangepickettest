@@ -1,3 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+<my-date-range-picker [options]="dateRangePickerOptions"
+                     (dateRangeChanged)="onDateRangeChanged($event)"
+                     [selDateRange]="selectedDateRangeNormal"></my-date-range-picker>
+<button (click)="clearDateRange()">Clear</button>
